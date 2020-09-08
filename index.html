@@ -1,15 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zaralan's Projects</title>
+	<style>
+		body {
+			padding: 0px;
+			margin: 0px;
+			font-family: century gothic, sans-serif;
+		}
+
+		h1,
+		h2 {
+			text-align: center;
+			font-size: 3em;
+		}
+
+		a:link,
+		a:visited,
+		a:hover,
+		a:active {
+			color: black;
+			text-decoration: none;
+		}
+
+		ul {
+			padding: 0px;
+			text-align: center;
+		}
+
+		li {
+			display: inline-block;
+			padding-bottom: 3px;
+			margin-right: 10px;
+			margin-left: 10px;
+			font-size: 2em;
+		}
+
+		li:after {
+			content: '';
+			display: block;
+			border-bottom: solid 2px orange;
+			transform: scaleX(0);
+			transition: transform 500ms ease;
+			transform-origin: center;
+		}
+
+		li:hover:after {
+			transform: scaleX(1);
+			transform-origin: center;
+		}
+
+		.left:hover:after {
+			transform: scaleX(1);
+			transform-origin: left;
+		}
+
+		.left:after {
+			transform-origin: left;
+		}
+
+		.right:hover:after {
+			transform: scaleX(1);
+			transform-origin: right;
+		}
+
+		.right:after {
+			transform-origin: right;
+		}
+
+		@media screen and (max-width: 600px) {
+			li {
+				display: block;
+				margin-left: 25%;
+				margin-right: 25%;
+				font-size: 1.5em;
+			}
+
+			li:hover:after,
+			.left:hover:after,
+			.right:hover:after {
+				transition-delay: 200ms;
+				transform-origin: center;
+			}
+
+			.left:after,
+			.right:after {
+				transform-origin: center;
+			}
+		}
+	</style>
 </head>
 
 <body>
-    <h1>Coming Soon!</h1>
-    <p>Hopefully...</p>
+	<h1>The portfolio is in WIP state!</h1>
+	<h2>Links to my projects (in case you're interested):</h2>
+	<ul>
+		<li class="left"><a href="./3.3.5aRogueGuide/index.html">ROGUE GUIDE</a></li>
+		<li><a href="./Meow/index.html">A page for hugs and testing</a></li>
+		<li class="right"><a href="./ITSIT/index.html">ITSIT WEB SITE</a></li>
+	</ul>
+	<ul>
+		<li><a href="./Midterm/index.html">Health Finder App Page</a></li>
+	</ul>
 </body>
 
 </html>

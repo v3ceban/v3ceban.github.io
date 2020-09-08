@@ -1,0 +1,362 @@
+/* CSS Document */
+/*All of the images, graphics and some of the names aren't mine and belong completely to the Blizzard Entertainment®. Everything is used on a legal basis due to an official permission given by blizzard which can be found here: https://www.blizzard.com/en-us/company/about/legal-faq.html
+
+World of Warcraft®
+©2004 Blizzard Entertainment, Inc. All rights reserved. World of Warcraft, Warcraft and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
+World of Warcraft®: Wrath of the Lich King®
+©2008 Blizzard Entertainment, Inc. All rights reserved. Wrath of the Lich King is a trademark, and World of Warcraft, Warcraft and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
+Hearthstone®: Heroes of Warcraft™
+©2014 Blizzard Entertainment, Inc. All rights reserved. Heroes of Warcraft is a trademark, and Hearthstone is a registered trademark of Blizzard Entertainment, Inc. in the U.S. and/or other countries.*/
+*, *:befor, *:after {box-sizing: inherit;}
+
+html {box-sizing: border-box;
+scroll-behavior: smooth;}
+
+body {background-color: #172026;
+color: #F2EAD2;
+margin: 0px;
+font-family: century gothic, arial, sans-serif;}
+
+#container {width: 1280px;
+margin-left: auto;
+margin-right: auto;}
+
+a:link, a:visited {text-decoration: none;
+color: #48734F;}
+
+a:hover, a:active {text-decoration: none;
+color: #71CB21;
+transition: color 0.5s ease;}
+
+h1 {color: #C935F2;
+font-family: Century Gothic, arial, sans-serif;
+font-weight: normal;
+font-size: 2em;}
+
+h1 a:link, h1 a:visited {color: #C935F2;}
+
+h1 a:hover, h1 a:active {color: #C935F2;}
+
+h2 {font-weight: normal;
+font-size: 1.75em;}
+
+h3 {font-weight: normal;
+font-size: 1.75em;}
+
+p {font-size: 1em;}
+
+abbr {text-decoration: none;}
+
+header q {font-family: times, times new roman, serif;}
+
+header {background-image: url("./Assets/Images/Background.jpg"); /*this image was taken here: https://www.facebook.com/Warcraft/photos/a.10155694376974034/10155694377344034/?type=1&theater
+	
+Although it was drawn by Laura Sava, it was commisioned by Blizzard Entertainment® and legaly belongs to them, hence I claim my right to use and display it for home, noncommercial and personal use for this project only, as it is stated here:
+https://www.blizzard.com/en-us/company/about/legal-faq.html*/
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+margin-top: 0px;
+margin-left: auto;
+margin-right: auto;}
+
+#bgfade {background-color: rgba(0,0,0,0.7);}
+
+#activePage {color: #71CB21;}
+
+header nav ul li a:link, header nav ul li a:visited {color: #F2EAD2;}
+
+header nav ul li a:hover, header nav ul li a:active {color: #71CB21;}
+
+header nav ul {list-style: none;
+text-align: center;
+font-size: 1.5em;
+clear: both;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 0px;
+padding-right: 0px;
+background-color: rgba(0,0,0,0.7);}
+
+header nav ul li {display: inline-block;
+padding-right: 10px;
+padding-left: 10px;}
+
+header h2 {text-align: right;
+font-size: 2em;
+margin-right: 50px;
+padding-top: 100px;
+margin-top: 0px;
+font-weight: bolder}
+
+#logoWithText {float: left;
+width: 185px;
+margin-left: 15px;}
+
+#logoWithText img {width: 185px;
+height: 200px;}
+
+header h1 {clear: left;
+font-size: 1.5em;
+text-align: center;
+margin-top: -10px;}
+
+#logoWithText h1 span {display: block;
+font-size: 0.8em;}
+
+main {margin: 10px;}
+
+section {padding: 10px;
+background-color: rgba(0,0,0,0.5);
+margin-top: 10px;}
+
+.Mobile {display: none;}
+
+#formPage legend {margin-bottom: 0px;
+padding-bottom: 0px;
+text-align: center;
+text-transform: capitalize;}
+
+#formPage #firstParagraph {margin-top: 8px;}
+
+#formPage textarea {margin-bottom: 10px;
+margin-top: 10px;
+width: 80%;
+height: 300px;}
+
+#actionPage h1 {text-align: center;
+margin-top: 50px;
+margin-bottom: 50px;
+font-size: 2.5em;}
+
+#actionPage h2 {padding-bottom: 20px;}
+
+#actionPage h3 {padding-bottom: 20px;}
+
+#mainPage h2 {color: #C935F2;}
+
+#mainPage sup {font-size: 0.5em;}
+
+#mainImage {float: right;
+margin-left: 40px;
+margin-right: 10px;
+width: 350px;
+height: 350px;
+background-image: url("Assets/Images/mainImage.jpg");
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;}
+
+#mainContent {margin-bottom: 30px;
+width: 60%;}
+
+#mainSlider {display: block;
+margin: 0px auto;
+width: 100%;
+height: 600px;
+padding: 0px;
+border: 1px #48734F ridge;}
+
+#talentsImage {display: block;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+background-color: rgba(0,0,0,0.5);}
+
+#glyphsImage {display: block;
+text-align: center;
+background-color: rgba(0,0,0,0.5);
+padding: 10px;
+margin-left: auto;
+margin-right: auto;}
+
+#talentsPage ul, #talentsPage ol {padding-left: 20px;}
+
+#talentsPage ul li, #talentsPage ol li {margin-bottom: 10px;}
+
+#talentsPage #glyphs ul {list-style: none;
+padding-left: 0px;}
+
+#talentsPage #glyphs ul li {padding-left: 0px;
+margin-left: -18px;}
+
+#listitemFix {margin-left: 0.5em;}
+
+#statsImage {text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;
+background-color: rgba(0,0,0,0.5);
+padding: 10px;}
+
+#OpenerImages {text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;
+background-color: rgba(0,0,0,0.5);
+padding: 10px;}
+
+#OpenerImages img {width: 450px;
+margin-top: 10px;}
+
+.text {font-size: 2.5em;
+margin-left: 10px;
+margin-right: 10px;}
+
+.secIntro {text-align: center;}
+
+#Rotation ol {padding-left: 20px;}
+
+#Rotation ol li {margin-bottom: 10px;}
+
+.mIcon {width: 1em;
+height: 1em;
+display: inline-block;
+background-repeat: no-repeat;
+background-position: center;
+background-size: 100%;
+border-radius: 15%;
+border: groove 1px rgba(255,255,255,0.58);
+margin-bottom: -4px;}
+
+.bIcon {width: 2em;
+height: 2em;
+display: inline-block;
+background-repeat: no-repeat;
+background-position: center;
+background-size: 100%;
+border-radius: 15%;
+border: groove 1px rgba(255,255,255,0.58);}
+
+.AdrenalinRush {background-image: url("Assets/Graphics/SkillsIcons/AdrenalinRush.jpg");}
+
+.KillingSpree {background-image: url("Assets/Graphics/SkillsIcons/KillingSpree.jpg");}
+
+.Rupture {background-image: url("Assets/Graphics/SkillsIcons/Rupture.jpg");}
+
+.Eviscerate {background-image: url("Assets/Graphics/SkillsIcons/Eviscerate.jpg");}
+
+.VilePoisons {background-image: url("Assets/Graphics/SkillsIcons/VilePoison.jpg");}
+
+.InstantPosion {background-image: url("Assets/Graphics/SkillsIcons/InstantPosion.jpg");}
+
+.Daggers {background-image: url("Assets/Graphics/SkillsIcons/Daggers.jpg");}
+
+.Swords {background-image: url("Assets/Graphics/SkillsIcons/Swords.jpg");}
+
+.Precision {background-image: url("Assets/Graphics/SkillsIcons/Precision.jpg");}
+
+.Mastery {background-image: url("Assets/Graphics/SkillsIcons/Expertise.jpg");}
+
+.ARP {background-image: url("Assets/Graphics/SkillsIcons/ARP.jpg");}
+
+.SliceAndDice {background-image: url("Assets/Graphics/SkillsIcons/SliceAndDice.jpg");}
+
+.SinisterStrike {background-image: url("Assets/Graphics/SkillsIcons/SinisterStrike.jpg");}
+
+.Sprint {background-image: url("Assets/Graphics/SkillsIcons/Sprint.jpg");}
+
+.Kick {background-image: url("Assets/Graphics/SkillsIcons/Kick.jpg");}
+
+.Vanish {background-image: url("Assets/Graphics/SkillsIcons/Vanish.jpg");}
+
+footer {border-top: 1px solid black;
+background-color: rgba(0,0,0,0.5);
+padding: 0px;
+margin-top: 25px;}
+
+footer h1 {font-size: 1.5em;
+text-align: center;
+text-transform: uppercase;}
+
+footer ul {list-style: none;
+text-align: center;
+padding-left: 0px;
+padding-bottom: 10px;
+margin-bottom: 0px;}
+
+footer ul li {display: inline-block;}
+
+@media screen and (max-width: 1280px){
+	#container {width: 100%;}
+}
+
+@media screen and (max-width: 800px){
+	header h2 {padding: 0px;
+	margin: 0px;
+	text-align: center;
+	font-size: 1.6em;}
+	#logoWithText {float: none;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	background-color: rgba(0,0,0,0.7);}
+	header img {margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 138.75px;
+	height: 150px;}
+	#logoWithText h1 {padding-bottom: 10px;}
+	#footerSlash {display: none;}
+	footer ul li {display: block;
+	padding-bottom: 5px;}
+	#mainImage {float: none;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;}
+	#mainPage h1 {text-align: center;}
+	#mainPage ul {text-align: center;
+	font-size: 1.3em;
+	padding: 0px;
+	list-style: none;}
+	#mainPage ul li {display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 2px;
+	padding-bottom: 3px;}
+	#mainSlider {width: 100%;
+	height: 400px;}
+	#mainPage .PC {display: none;}
+	#mainPage .Mobile {display: block;}
+	#mainContent {width: 100%;}
+	#talentsImage {width: 95%}
+	#talentsImage img {width: 100%;}
+	
+}
+
+@media screen and (max-width: 600px){
+	header h2 {padding: 0px;
+	margin: 0px;
+	text-align: center;
+	font-size: 1.6em;}
+	header nav ul {padding-top: 5px;
+	padding-bottom: 5px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;}
+	header nav ul li {display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin: 0px;}
+	#logoWithText {float: none;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	background-color: rgba(0,0,0,0.7);}
+	header img {margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 138.75px;
+	height: 150px;}
+	#logoWithText h1 {padding-bottom: 10px;}
+	#talentsImage {width: 95%}
+	#talentsImage img {width: 100%;}
+	#glyphsImage {width: 95%}
+	#glyphsImage img {width: 60%;}
+	#statsImage {width: 95%;}
+	#statsImage img {width: 100%;}
+	#OpenerImages img {width: 100%;}
+}

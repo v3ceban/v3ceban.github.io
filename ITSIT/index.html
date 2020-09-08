@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+  <meta name="author" content="Vladimir Ceban">
+  <meta name="Keywords" content="Институт, Транспорт, Сервис, Туризм, ИТСиТ, Воротынец, НГИЭУ">
+  <meta name="Description" content="Филлиал НГИЭУ в Воротынце! Институт Транспорта, Сервиса и Туризма Нижегородской области предоставляет высшее образование в направлениях сервиса, туризма и технического обслуживания!">
+  <link type="text/css" rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png?v=2">
+  <link rel="manifest" href="./site.webmanifest?v=2">
+  <link rel="mask-icon" href="./safari-pinned-tab.svg?v=2" color="#289846">
+  <link rel="shortcut icon" href="./favicon.ico?v=2">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="./mstile-144x144.png?v=2">
+  <meta name="theme-color" content="#ffffff">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <title>Институт Транспорта Сервиса и Туризма</title>
+  <script>
+    function openNav() { document.getElementById("sideNav").style.width = "250px"; }
+    function closeNav() { document.getElementById("sideNav").style.width = "0"; }
+    function disableScroll() { document.body.addEventListener('touchstart', function (e) { e.preventDefault(); }); }
+    function enableScroll() { document.body.removeEventListener('touchstart', function (e) { e.preventDefault(); }); }
+    function disableOverflow() { document.getElementById("BODY").style.overflow = "hidden"; }
+    function enableOverflow() { document.getElementById("BODY").style.overflow = "visible"; }
+    function showCurtain() { document.getElementById("curtain").style.display = "block"; } function hideCurtain() { document.getElementById("curtain").style.display = "none"; }
+    function showEducationExtra() { document.getElementById("educationExtra").style.display = "block"; }
+    function hideEducationExtraButtonOn() { document.getElementById("educationExtraButtonOn").style.display = "none"; }
+    function showEducationExtraButtonOff() { document.getElementById("educationExtraButtonOff").style.display = "inline"; }
+    function hideEducationExtra() { document.getElementById("educationExtra").style.display = "none"; }
+    function showEducationExtraButtonOn() { document.getElementById("educationExtraButtonOn").style.display = "inline"; }
+    function hideEducationExtraButtonOff() { document.getElementById("educationExtraButtonOff").style.display = "none"; }
+    function showSportsExtra() { document.getElementById("sportsExtra").style.display = "block"; }
+    function hideSportsExtraButtonOn() { document.getElementById("sportsExtraButtonOn").style.display = "none"; }
+    function showSportsExtraButtonOff() { document.getElementById("sportsExtraButtonOff").style.display = "inline"; }
+    function hideSportsExtra() { document.getElementById("sportsExtra").style.display = "none"; }
+    function showSportsExtraButtonOn() { document.getElementById("sportsExtraButtonOn").style.display = "inline"; }
+    function hideSportsExtraButtonOff() { document.getElementById("sportsExtraButtonOff").style.display = "none"; }
+    function showScienceExtra() { document.getElementById("scienceExtra").style.display = "block"; }
+    function hideScienceExtraButtonOn() { document.getElementById("scienceExtraButtonOn").style.display = "none"; }
+    function showScienceExtraButtonOff() { document.getElementById("scienceExtraButtonOff").style.display = "inline"; }
+    function hideScienceExtra() { document.getElementById("scienceExtra").style.display = "none"; }
+    function showScienceExtraButtonOn() { document.getElementById("scienceExtraButtonOn").style.display = "inline"; }
+    function hideScienceExtraButtonOff() { document.getElementById("scienceExtraButtonOff").style.display = "none"; }
+    function showLabExtra() { document.getElementById("labExtra").style.display = "block"; }
+    function hideLabExtraButtonOn() { document.getElementById("labExtraButtonOn").style.display = "none"; }
+    function showLabExtraButtonOff() { document.getElementById("labExtraButtonOff").style.display = "inline"; }
+    function hideLabExtra() { document.getElementById("labExtra").style.display = "none"; }
+    function showLabExtraButtonOn() { document.getElementById("labExtraButtonOn").style.display = "inline"; }
+    function hideLabExtraButtonOff() { document.getElementById("labExtraButtonOff").style.display = "none"; }
+    function showLibExtra() { document.getElementById("libExtra").style.display = "block"; }
+    function hideLibExtraButtonOn() { document.getElementById("libExtraButtonOn").style.display = "none"; }
+    function showLibExtraButtonOff() { document.getElementById("libExtraButtonOff").style.display = "inline"; }
+    function hideLibExtra() { document.getElementById("libExtra").style.display = "none"; }
+    function showLibExtraButtonOn() { document.getElementById("libExtraButtonOn").style.display = "inline"; }
+    function hideLibExtraButtonOff() { document.getElementById("libExtraButtonOff").style.display = "none"; }
+    function showAddExtra() { document.getElementById("addExtra").style.display = "block"; }
+    function hideAddExtraButtonOn() { document.getElementById("addExtraButtonOn").style.display = "none"; }
+    function showAddExtraButtonOff() { document.getElementById("addExtraButtonOff").style.display = "inline"; }
+    function hideAddExtra() { document.getElementById("addExtra").style.display = "none"; }
+    function showAddExtraButtonOn() { document.getElementById("addExtraButtonOn").style.display = "inline"; }
+    function hideAddExtraButtonOff() { document.getElementById("addExtraButtonOff").style.display = "none"; }
+    function openCoursesExtraInfo() { document.getElementById("coursesExtraInfo").style.display = "block"; }
+    function closeCoursesExtraInfo() { document.getElementById("coursesExtraInfo").style.display = "none"; }
+    function showServiceModal() { document.getElementById("serviceModal").style.display = "block"; }
+    function closeServiceModal() { document.getElementById("serviceModal").style.display = "none"; }
+    function showTechModal() { document.getElementById("techModal").style.display = "block"; }
+    function closeTechModal() { document.getElementById("techModal").style.display = "none"; }
+    function showServiceModalHeader() { document.getElementById("serviceModalHeader").style.display = "block"; }
+    function closeServiceModalHeader() { document.getElementById("serviceModalHeader").style.display = "none"; }
+    function showTechModalHeader() { document.getElementById("techModalHeader").style.display = "block"; }
+    function closeTechModalHeader() { document.getElementById("techModalHeader").style.display = "none"; }
+  </script>
+  <script src="https://kit.fontawesome.com/ed9239fef9.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?146"></script>
+  <script type="text/javascript"> (function () { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })();
+  </script>
+</head>
+
+<body id="BODY">
+  <!--The code that helps VK widget load faster. I'm not quite sure how exactly it works, but it does-->
+  <div id="vk_api_transport"></div>
+  <script type="text/javascript">
+    window.vkAsyncInit = function () {
+      VK.init({
+        apiId: 7225784
+      });
+    };
+    setTimeout(function () {
+      var el = document.createElement("script");
+      el.type = "text/javascript";
+      el.src = "https://vk.com/js/api/openapi.js?162";
+      el.async = true;
+      document.getElementById("vk_api_transport").appendChild(el);
+    }, 0);
+  </script>
+  <div id="container">
+    <header id="home">
+      <nav id="topNav">
+        <ul>
+          <li><a href="#home"><i class="fas fa-home"></i> Главная</a></li>
+          <li><a href="#about"><i class="fas fa-info-circle"></i> О Нас</a></li>
+          <li><a href="#courses"><i class="fas fa-chalkboard-teacher"></i> Кафедры</a></li>
+          <li><a href="#news"><i class="fas fa-bell"></i> Новости</a></li>
+          <li><a href="#contacts"><i class="fas fa-address-card"></i> Контакты</a></li>
+          <div class="lang">
+            <li><a href="./index.html"><span class="langIcon RU"></span> RU <i class="fa fa-caret-down"></i></a></li>
+            <li class="langContent"><a href="./EN/index.html"><span class="langIcon EN"></span> EN</a></li>
+          </div>
+        </ul>
+      </nav>
+      <i class="fas fa-bars" id="mobNav" onClick="openNav(); disableScroll(); disableOverflow(); showCurtain(); closeCoursesExtraInfo(); closeServiceModal(); closeTechModal(); closeServiceModalHeader(); closeTechModalHeader();"></i>
+      <nav id="sideNav" class="sidenav"> <i class="fas fa-bars closebtn" onClick="closeNav(); enableScroll(); enableOverflow();  hideCurtain();"></i>
+        <ul>
+          <li><a href="#home" onclick="closeNav(); enableScroll(); enableOverflow(); hideCurtain();"><i class="fas fa-home"></i> Главная</a></li>
+          <li><a href="#about" onclick="closeNav(); enableScroll(); enableOverflow(); hideCurtain();"><i class="fas fa-info-circle"></i> О Нас</a></li>
+          <li><a href="#courses" onclick="closeNav(); enableScroll(); enableOverflow(); hideCurtain();"><i class="fas fa-chalkboard-teacher"></i> Кафедры</a></li>
+          <li><a href="#news" onclick="closeNav(); enableScroll(); enableOverflow(); hideCurtain();"><i class="fas fa-bell"></i> Новости</a></li>
+          <li><a href="#contacts" onclick="closeNav(); enableScroll(); enableOverflow(); hideCurtain();"><i class="fas fa-address-card"></i> Контакты</a></li>
+        </ul>
+        <div id="mobLang"> <a href="./EN/index.html"><span class="langIcon EN"></span> EN</a> <a href="./index.html"><span class="langIcon RU"></span>RU</a> </div>
+      </nav>
+      <div id="curtain" onClick="closeNav(); enableScroll(); enableOverflow();  hideCurtain();"></div>
+      <div id="logoContainer">
+        <div class="logo">
+          <h1><a href="./index.html" target="_self">Институт Транспорта<br>Сервиса и Туризма</a></h1><a href="./index.html" target="_self"><img src="./Assets/Graphics/MainLogo.png" alt="Нажмите что бы попасть на сайт института транспорта сервиса и туризма"></a>
+        </div>
+        <div class="vLine"></div>
+        <div class="hLine"></div>
+        <div class="logo"><a href="./index.html" target="_blank"><img src="./Assets/Graphics/NewLogo.png" alt="Нажмите что бы попасть на сайт академии туризма"></a>
+          <h2><a href="./index.html" target="_blank">Академия<br>Туризма</a></h2>
+        </div>
+      </div>
+      <div id="hText">
+        <h2>Мы не отбираем лучших студентов -<br>
+          Мы каждого делаем лучшим.</h2>
+        <p>Институт Транспорта, Сервиса и Туризма Нижегородской Области предоставляет высококачественное высшее образование по направлениям Сервиса, Туризма и Технического Обслуживания. Набор на следующий год обучения проводится уже сейчас!</p>
+      </div>
+    </header>
+    <main>
+      <section id="about">
+        <!--Images in this section were given to me by ITSIT-->
+        <div class="intro">
+          <h1>О Нас</h1>
+          <p>Институт Транспорта Сервиса и туризма был открыт в 2011 году и является частью Княгининского Университета. Мы проводим обучение студентов на базе высшего и среднего специального образования в очном или заочном режиме обучения по направлениям транспорта, сервиса и туризма. Бюджетная форма обучения доступна на конкурсной основе, контракт от 25 тыс. рублей в год. Иногородним студентам предоставляется удобное общежитие. Также мы предоставляем:</p>
+        </div>
+        <div id="aboutContainter">
+          <div class="aboutContent"> <img src="./Assets/Images/Events.jpg" alt="Студенты Института выступают на мероприятии">
+            <div class="aboutContentText">
+              <h2><i class="fas fa-dice"></i> Мероприятия</h2>
+              <div class="mobile">
+                <button class="mobileExtraButtonOn" id="educationExtraButtonOn" onClick="showEducationExtra(); hideEducationExtraButtonOn(); showEducationExtraButtonOff()">Подробнее <i class="fas fa-caret-down"></i></button>
+                <button class="mobileExtraButtonOff" id="educationExtraButtonOff" onClick="hideEducationExtra(); showEducationExtraButtonOn(); hideEducationExtraButtonOff()">Свернуть <i class="fas fa-caret-up"></i></button>
+              </div>
+              <p>Институт регулярно проводит студенческие праздники, конкурсы и фестивали. Каждое лето собираются команды для работы и отдыха в Ялте и Анапе. Есть своя команда КВН, являющаяся чемпионом университета. Неподалёку для наших студентов функционирует Центр молодёжных инициатив НГИЭУ.</p>
+            </div>
+          </div>
+          <div class="mobile">
+            <p id="educationExtra" class="aboutMobileExtra">Институт регулярно проводит студенческие праздники, конкурсы и фестивали. Каждое лето собираются команды для работы и отдыха в Ялте и Анапе. Есть своя команда КВН, являющаяся чемпионом университета. Неподалёку для наших студентов функционирует Центр молодёжных инициатив НГИЭУ.</p>
+          </div>
+          <div class="line mobile"></div>
+          <div class="aboutContent"> <img src="./Assets/Images/Gym.jpg" alt="Студент ИТСиТ на турнире по волейболу">
+            <div class="aboutContentText">
+              <h2><i class="fas fa-football-ball"></i> Спорт</h2>
+              <div class="mobile">
+                <button class="mobileExtraButtonOn" id="sportsExtraButtonOn" onClick="showSportsExtra(); hideSportsExtraButtonOn(); showSportsExtraButtonOff()">Подробнее <i class="fas fa-caret-down"></i></button>
+                <button class="mobileExtraButtonOff" id="sportsExtraButtonOff" onClick="hideSportsExtra(); showSportsExtraButtonOn(); hideSportsExtraButtonOff()">Свернуть <i class="fas fa-caret-up"></i></button>
+              </div>
+              <p>Наши студенты имеют возможность посещать тренажёрный зал, каток, бассейн и различные спортивные секции, включая дзюдо, самбо, сумо, баскетбол, волейбол, плавание, футбол, хоккей, шорт-трек, гимнастику, аквааэробику, бодибилдинг, пауэрлифтинг, гиревой спорт и армрестлинг.</p>
+            </div>
+          </div>
+          <div class="mobile">
+            <p id="sportsExtra" class="aboutMobileExtra">Наши студенты имеют возможность посещать тренажёрный зал, каток, бассейн и различные спортивные секции, включая дзюдо, самбо, сумо, баскетбол, волейбол, плавание, футбол, хоккей, шорт-трек, гимнастику, аквааэробику, бодибилдинг, пауэрлифтинг, гиревой спорт и армрестлинг.</p>
+          </div>
+          <div class="line mobile"></div>
+          <div class="aboutContent"> <img src="./Assets/Images/Science.jpg" alt="Студенты на международной конференции">
+            <div class="aboutContentText">
+              <h2><i class="fas fa-flask"></i> Научная жизнь</h2>
+              <div class="mobile">
+                <button class="mobileExtraButtonOn" id="scienceExtraButtonOn" onClick="showScienceExtra(); hideScienceExtraButtonOn(); showScienceExtraButtonOff()">Подробнее <em class="fas fa-caret-down"></em></button>
+                <button class="mobileExtraButtonOff" id="scienceExtraButtonOff" onClick="hideScienceExtra(); showScienceExtraButtonOn(); hideScienceExtraButtonOff()">Свернуть <i class="fas fa-caret-up"></i></button>
+              </div>
+              <p>Дважды в год – осенью и весной – в институте проводятся международные научно-практические конференции для молодых учёных и студентов. Также есть возможность участия в профессиональных конкурсах, олимпиадах и научно-практических конференциях.</p>
+            </div>
+          </div>
+          <div class="mobile">
+            <p id="scienceExtra" class="aboutMobileExtra">Дважды в год – осенью и весной – в институте проводятся международные научно-практические конференции для молодых учёных и студентов. Также есть возможность участия в профессиональных конкурсах, олимпиадах и научно-практических конференциях.</p>
+          </div>
+          <div class="line mobile"></div>
+          <div class="aboutContent"><img src="./Assets/Images/Lab.jpg" alt="Теплоход со студентами института">
+            <div class="aboutContentText">
+              <h2><i class="fas fa-ship"></i> Полевые лаборатории</h2>
+              <div class="mobile">
+                <button class="mobileExtraButtonOn" id="labExtraButtonOn" onClick="showLabExtra(); hideLabExtraButtonOn(); showLabExtraButtonOff()">Подробнее <i class="fas fa-caret-down"></i></button>
+                <button class="mobileExtraButtonOff" id="labExtraButtonOff" onClick="hideLabExtra(); showLabExtraButtonOn(); hideLabExtraButtonOff()">Свернуть <i class="fas fa-caret-up"></i></button>
+              </div>
+              <p>В институте имеется лабораторный комплекс рекреационного туризма и гостеприимства, в состав которого входит теплоход ПС-172, являющийся базой для проведения учебных практик.</p>
+            </div>
+          </div>
+          <div class="mobile">
+            <p id="labExtra" class="aboutMobileExtra">В институте имеется лабораторный комплекс рекреационного туризма и гостеприимства, в состав которого входит теплоход ПС-172, являющийся базой для проведения учебных практик.</p>
+          </div>
+          <div class="line mobile"></div>
+          <div class="aboutContent"><img src="./Assets/Images/Library.jpg" alt="Читальный зал ИТСиТ">
+            <div class="aboutContentText">
+              <h2><i class="fas fa-book"></i> Библиотека</h2>
+              <div class="mobile">
+                <button class="mobileExtraButtonOn" id="libExtraButtonOn" onClick="showLibExtra(); hideLibExtraButtonOn(); showLibExtraButtonOff()">Подробнее <i class="fas fa-caret-down"></i></button>
+                <button class="mobileExtraButtonOff" id="libExtraButtonOff" onClick="hideLibExtra(); showLibExtraButtonOn(); hideLibExtraButtonOff()">Свернуть <i class="fas fa-caret-up"></i></button>
+              </div>
+              <p>В фонде библиотеки института представлено больше 22 тысяч книг. Список включает в себя учебные материалы, научные издания, а также художественную литературу. Студенты имеют доступ к электронным библиотечным системам и справочникам.</p>
+            </div>
+          </div>
+          <div class="mobile">
+            <p id="libExtra" class="aboutMobileExtra">В фонде библиотеки института представлено больше 22 тысяч книг. Список включает в себя учебные материалы, научные издания, а также художественную литературу. Студенты имеют доступ к электронным библиотечным системам и справочникам.</p>
+          </div>
+          <div class="line mobile"></div>
+          <div class="aboutContent"><img src="./Assets/Images/AddProfAlt.jpg" alt="Студенты электрогазосварщики на практике">
+            <div class="aboutContentText">
+              <h2><i class="fas fa-award"></i> Дополнительно</h2>
+              <div class="mobile">
+                <button class="mobileExtraButtonOn" id="addExtraButtonOn" onClick="showAddExtra(); hideAddExtraButtonOn(); showAddExtraButtonOff()">Подробнее <i class="fas fa-caret-down"></i></button>
+                <button class="mobileExtraButtonOff" id="addExtraButtonOff" onClick="hideAddExtra(); showAddExtraButtonOn(); hideAddExtraButtonOff()">Свернуть <i class="fas fa-caret-up"></i></button>
+              </div>
+              <p>Студенты могут пройти обучение по дополнительным специальностям электрогазосварщика и водителя категорий «В» и «С». Также студенты института имеют возможность пройти стажировку в Германии или Польше.</p>
+            </div>
+          </div>
+          <div class="mobile">
+            <p id="addExtra" class="aboutMobileExtra">Студенты могут пройти обучение по дополнительным специальностям электрогазосварщика и водителя категорий «В» и «С». Также студенты института имеют возможность пройти стажировку в Германии или Польше.</p>
+          </div>
+        </div>
+      </section>
+      <section id="courses">
+        <div class="intro">
+          <h1>Наши Кафедры</h1>
+          <p>Туризм, сервис и техническое обслуживание играют важную роль в экономике, являясь крайне востребованными, развивающимися и многоплановыми направлениями на рынке труда. Наши кафедры предлагают следующие курсы:</p>
+        </div>
+        <div id="coursesContainer">
+          <!--Videos in this section were given to me by ITSIT-->
+          <div class="coursesContent Service">
+            <div class="coursesVideoContainer">
+              <video class="coursesVideo" autoplay muted loop>
+                <source src="./Assets/Videos/videoService.mp4" type="video/mp4">
+              </video>
+              <div class="fade" onClick="openCoursesExtraInfo(); disableOverflow(); disableScroll(); showServiceModal(); showServiceModalHeader();">
+                <h2><i class="fas fa-suitcase"></i> Сервис и Туризм</h2>
+              </div>
+            </div>
+            <ul>
+              <li>
+                <h3>43.02.10. Туризм</h3>
+                <p>Средне-специальное образование с углублением в изучение Сервиса и Туризма.</p>
+              </li>
+              <li>
+                <h3>43.03.01. Сервис</h3>
+                <p>Высшее образование уровня Бакалавра в направлениях Сервиса и Туризма с углублением в индустрию Сервиса.</p>
+              </li>
+              <li>
+                <h3>38.04.02. Менеджмент</h3>
+                <p>Высшее образование уровня Магистра в направлениях Сервиса, Туризма и Менеджмента.</p>
+              </li>
+            </ul>
+            <button onClick="openCoursesExtraInfo(); disableOverflow(); disableScroll(); showServiceModal(); showServiceModalHeader();">Подробнее <i class="fas fa-caret-right"></i></button>
+          </div>
+          <div class="vLine"></div>
+          <div class="coursesContent Tech">
+            <div class="coursesVideoContainer">
+              <video class="coursesVideo" autoplay muted loop>
+                <source src="./Assets/Videos/videoTech.mp4" type="video/mp4">
+              </video>
+              <div class="fade" onClick="openCoursesExtraInfo(); disableOverflow(); disableScroll(); showTechModal(); showTechModalHeader();">
+                <h2><i class="fas fa-cogs"></i> Тех. Обслуживание</h2>
+              </div>
+            </div>
+            <ul>
+              <li>
+                <h3>23.02.03. Тех. Обслуживание</h3>
+                <p>Средне-специальное образование с углублением в изучение Технического Обслуживания.</p>
+              </li>
+              <li>
+                <h3>23.03.03. Эксплуатация машин</h3>
+                <p>Высшее образование уровня Бакалавра в направлении Технического обслуживания и Эксплуатации машин.</p>
+              </li>
+              <li>
+                <h3>35.04.06. Агроинженерия</h3>
+                <p>Высшее образование уровня Магистра в направлении Технического обслуживания в области Агроинженерии.</p>
+              </li>
+            </ul>
+            <button onClick="openCoursesExtraInfo(); disableOverflow(); disableScroll(); showTechModal(); showTechModalHeader();">Подробнее <i class="fas fa-caret-right"></i></button>
+          </div>
+        </div>
+        <div id="coursesExtraInfo">
+          <div class="modalContent">
+            <div class="modalHead"> <i id="closeModal" class="fas fa-times"></i>
+              <h2 id="serviceModalHeader">Кафедра Сервиса и Туризма</h2>
+              <h2 id="techModalHeader">Кафедра Тех. Обслуживания</h2>
+            </div>
+            <div class="modalBody" id="serviceModal">
+              <ul>
+                <h3>43.02.10. Туризм</h3>
+                <li><strong>База:</strong> Общее образование</li>
+                <li><strong>Для поступления:</strong> Диплом об окончании 9 классов</li>
+                <li><strong>Бюджетные места:</strong> В наличии только бюджетные места</li>
+                <li><strong>Срок и форма обучения:</strong> 2 года 10 месяцев очно</li>
+                <li><strong>Квалификация:</strong> Специалист по туризму</li>
+              </ul>
+              <ul>
+                <h3>3.03.01. Сервис</h3>
+                <li><strong>База:</strong> Среднее и Средне-специальное образование</li>
+                <li><strong>Для поступления:</strong> ЕГЭ (внутренние экзамены) по русскому языку, математике и обществознанию</li>
+                <li><strong>Бюджетные места:</strong> В наличии как бюджетные места на конкусрной основе, так и контрактные места (от 25 тыс. р. в год)</li>
+                <li><strong>Срок и форма обучения:</strong> 4 года очно, 5 лет заочно</li>
+                <li><strong>Квалификация:</strong> Бакалавр</li>
+              </ul>
+              <ul>
+                <h3>38.04.02 Менеджмент</h3>
+                <li><strong>База:</strong> Диплом Бакалавра</li>
+                <li><strong>Для поступления:</strong> Экзамен по математике и проф. дисциплине</li>
+                <li><strong>Бюджетные места:</strong> В наличии только бюджетные места</li>
+                <li><strong>Срок и форма обучения:</strong> 2 года очно</li>
+                <li><strong>Квалификация:</strong> Магистр</li>
+                <li><strong>Профиль:</strong> Менеджмент в гостиничном, экскурсионном и ресторанном бизнесе</li>
+              </ul>
+              <p>По окончанию обучения студенты могут устроиться менеджерами или консультантами в туристических фирмах или агентствах; администраторами в отелях и гостиницах; гидами; экскурсоводами; организаторами досуга; аниматорами; вожатыми; руководителями гостиничных предприятий и предприятий общественного питания; топ-менеджерами в развлекательных и физкультурно-оздоровительных комплексах, рекреационном и туристическом бизнесе.</p>
+            </div>
+            <div class="modalBody" id="techModal">
+              <ul>
+                <h3>23.02.03. Тех. Обслуживание</h3>
+                <li><strong>База:</strong> Общее образование</li>
+                <li><strong>Для поступления:</strong> Диплом об окончании 9 классов</li>
+                <li><strong>Бюджетные места:</strong> В наличии только бюджетные места</li>
+                <li><strong>Срок и форма обучения:</strong> 2 года 10 месяцев очно</li>
+                <li><strong>Квалификация:</strong> Техник</li>
+              </ul>
+              <ul>
+                <h3>23.03.03. Эксплуатация машин</h3>
+                <li><strong>База:</strong> Среднее и Средне-специальное образование</li>
+                <li><strong>Для поступления:</strong> ЕГЭ (внутренние экзамены) по русскому языку, математике и физике</li>
+                <li><strong>Бюджетные места:</strong> В наличии как бюджетные места на конкусрной основе, так и контрактные места (от 25 тыс. р. в год)</li>
+                <li><strong>Срок и форма обучения:</strong> 4 года очно, 5 лет заочно</li>
+                <li><strong>Квалификация:</strong> Бакалавр</li>
+              </ul>
+              <ul>
+                <h3>35.04.06. Агроинженерия</h3>
+                <li><strong>База:</strong> Диплом Бакалавра</li>
+                <li><strong>Для поступления:</strong> Экзамен по математике и проф. дисциплине</li>
+                <li><strong>Бюджетные места:</strong> В наличии только бюджетные места</li>
+                <li><strong>Срок и форма обучения:</strong> 2 года очно</li>
+                <li><strong>Квалификация:</strong> Магистр</li>
+                <li><strong>Профиль:</strong> Эксплуатация машин и оборудования</li>
+              </ul>
+              <p>По окончанию обучения студенты могут трудоустроиться в различных транспортных и логистических компаниях, дилерских центрах, на производственных предприятиях, станциях тех. осмотра и в других компаниях сферы автомобильного сервиса.</p>
+            </div>
+          </div>
+        </div>
+        <div class="hLine"></div>
+      </section>
+      <section id="news">
+        <h1>Новости Института</h1>
+        <div id="vk_widget">
+          <div id="vk_groups"></div>
+        </div>
+      </section>
+    </main>
+    <footer id="contacts">
+      <h1>Свяжитесь с нами</h1>
+      <div id="contactsContainer">
+        <div id="contactsSocialsContainer">
+          <ul>
+            <h2>Контакты:</h2>
+            <li><a href="tel:+78316422415"><i class="fas fa-phone fa-flip-horizontal"></i> 8-831-642-24-15</a></li>
+            <li><a href="tel:+78316421730"><i class="fas fa-phone fa-flip-horizontal"></i> 8-831-642-17-30</a></li>
+            <li><a href="mailto:vattex@mail.ru"><i class="fas fa-envelope"></i> vattex@mail.ru</a></li>
+            <li><a href="https://www.google.com/maps/place/%D0%93%D0%91%D0%9E%D0%A3+%D0%92%D0%9E+%D0%9D%D0%93%D0%98%D0%AD%D0%A3,+%D0%98%D0%9D%D0%A1%D0%A2%D0%98%D0%A2%D0%A3%D0%A2+%D0%A2%D0%A0%D0%90%D0%9D%D0%A1%D0%9F%D0%9E%D0%A0%D0%A2%D0%90,+%D0%A1%D0%95%D0%A0%D0%92%D0%98%D0%A1%D0%90+%D0%98+%D0%A2%D0%A3%D0%A0%D0%98%D0%97%D0%9C%D0%90/@56.0608444,45.8542755,18.75z/data=!4m13!1m7!3m6!1s0x415a9b41443f9603:0x4c89479bd73286ac!2z0YPQuy4g0JzQuNGA0LAsIDcsINCS0L7RgNC-0YLRi9C90LXRhiwg0J3QuNC20LXQs9C-0YDQvtC00YHQutCw0Y8sINCg0L7RgdGB0LjRjywgNjA2MjYw!3b1!8m2!3d56.0606609!4d45.8549538!3m4!1s0x415a9b4140f2e7c5:0xc45122c5071c98b1!8m2!3d56.0607144!4d45.8548683" target="_blank"><i class="fas fa-map-marker-alt"></i> ул. Мира, д.7, Воротынец, Нижегородская обл., Россия, 606260</a></li>
+          </ul>
+          <ul>
+            <h2>Социальные Сети:</h2>
+            <li><a href="https://vk.com/club55274015" target="_blank"><i class="fab fa-vk"></i> ВКонтакте</a></li>
+            <li><a href="https://www.instagram.com/itsit_vorotynets/" target="_blank"><i class="fab fa-instagram"></i> Инстаграм</a></li>
+          </ul>
+        </div>
+        <ul>
+          <h2>Полезные ссылки:</h2>
+          <li><a href="http://ngieu.ru/" target="_blank">Главный Сайт Княгининского Университета</a></li>
+          <li><a href="http://ngieu.ru/students/" target="_blank">Студентам</a></li>
+          <li><a href="http://ngieu.ru/abiturientam/" target="_blank">Абитуриентам</a></li>
+          <li><a href="http://ngieu.ru/educational-space/" target="_blank">Образовательная среда</a></li>
+          <li><a href="http://ngieu.ru/contacts/" target="_blank">Другие Институты Княгининского Университета</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script>
+    var modal = document.getElementById("coursesExtraInfo");
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+        document.body.removeEventListener('touchstart', function (e) { e.preventDefault(); });
+        document.getElementById("BODY").style.overflow = "visible";
+        document.getElementById("serviceModal").style.display = "none";
+        document.getElementById("techModal").style.display = "none";
+        document.getElementById("serviceModalHeader").style.display = "none";
+        document.getElementById("techModalHeader").style.display = "none";
+      }
+    }
+    var close = document.getElementById("closeModal");
+    close.onclick = function () {
+      modal.style.display = "none";
+      document.body.removeEventListener('touchstart', function (e) { e.preventDefault(); });
+      document.getElementById("BODY").style.overflow = "visible";
+      document.getElementById("serviceModal").style.display = "none";
+      document.getElementById("techModal").style.display = "none";
+      document.getElementById("serviceModalHeader").style.display = "none";
+      document.getElementById("techModalHeader").style.display = "none";
+    }
+  </script>
+  <script>
+    function vkWidgetInit() {
+      var containerWidth = document.querySelector('#vk_widget').clientWidth;
+      document.querySelector('#vk_widget').innerHTML = '<div id="vk_groups"></div>';
+      VK.Widgets.Group("vk_groups", {
+        mode: 4,
+        height: "650",
+        no_cover: 1,
+        color1: 'F5F5F5',
+        color3: '51A66E',
+        width: containerWidth,
+      }, 55274015);
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+      vkWidgetInit();
+      (function () {
+        window.addEventListener("resize", resizeThrottler, false);
+        var resizeTimeout;
+        function resizeThrottler() {
+          if (!resizeTimeout) {
+            resizeTimeout = setTimeout(function () {
+              resizeTimeout = null;
+              actualResizeHandler();
+            }, 66);
+          }
+        }
+        function actualResizeHandler() {
+          vkWidgetInit();
+        }
+      })();
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Мур</title>
+    <script src="https://kit.fontawesome.com/ed9239fef9.js" crossorigin="anonymous"></script>
+    <script>
+        var Hugs = prompt("How many hugs would you like today? :3");
+        if (Hugs == 1) {
+            alert("Here's your hug :3");
+        } else if (Hugs > 10) {
+            alert(`Oh, you're greedy! Alright, here are your ${Hugs} hugs :3`)
+        } else if (Hugs > 0) {
+            for (let i = 1; i <= Hugs; i++) {
+                alert("Here's your hug number " + i);
+                if (i == Hugs) {
+                    alert("You got all your hugs :3");
+                };
+            };
+        } else {
+            alert("Don't you want to get any hugs? Fine :( Refresh the page if you change your mind!");
+        };
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>I love my wife! <br>This page is for you <i class="fas fa-heart"></i></h1>
+        <button class="btn" id="btn">Press this to<br> see a meme</button>
+    </div>
+    <div id="popUp" class="container popUp">
+        <i class="far fa-times-circle closeBtn"></i>
+        <img src="./meow.jpg" alt="Me + You" class="bounce-in-fwd closeBtn">
+    </div>
+
+    <script>
+        var modal = document.getElementById("popUp");
+        var modalOpn = document.getElementById("btn");
+        var modalExt = document.getElementsByClassName("closeBtn");
+
+        modalOpn.addEventListener("click", openModal);
+
+        modalExt[0].addEventListener("click", closeModal);
+        modalExt[1].addEventListener("click", closeModal);
+
+        function openModal() { modal.style.display = "flex"; }
+
+        function closeModal() { modal.style.display = "none"; }
+    </script>
+</body>
+
+</html>
