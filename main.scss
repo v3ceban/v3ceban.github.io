@@ -1,0 +1,119 @@
+//Some resets
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+//Embeded
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+//Functions and variables
+$browser-context: 16;
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em;
+}
+
+$colorPrimary: #101f3d;
+$colorSecondary: #ffc435;
+$colorLessWhite: #faf5e9;
+$colorGrey: #ebebeb;
+
+//Styling
+body {
+    font-family: "Montserrat", sans-serif;
+    color: $colorPrimary;
+}
+
+header {
+    padding: 15px;
+    background: $colorPrimary;
+    color: $colorLessWhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logoLink:hover {
+        color: $colorLessWhite;
+    }
+
+    a:hover {
+        color: $colorSecondary;
+        transition: color 0.5s ease;
+    }
+
+    .logo {
+        display: flex;
+        picture,
+        img {
+            display: block;
+        }
+        h1 {
+            margin: 0 0 0 5px;
+            font-size: em(20);
+            line-height: 1.1em;
+            transform: translateY(-3px);
+            font-weight: 500;
+            span {
+                font-size: em(14);
+                display: block;
+                color: $colorSecondary;
+                font-weight: 300;
+                width: max-content;
+            }
+        }
+    }
+
+    nav {
+        min-width: 300px;
+        width: 600px;
+        transform: translateX(-30px);
+        > ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            font-size: em(20);
+            justify-content: space-around;
+
+            > li {
+                list-style: none;
+                font-weight: 500;
+
+                ::after {
+                    content: "";
+                    display: block;
+                    border-bottom: solid 1px $colorSecondary;
+                    transform: scaleX(0);
+                    transition: transform 0.5s ease;
+                    transform-origin: right;
+                }
+
+                :hover::after {
+                    transform: scaleX(1);
+                    transform-origin: left;
+                }
+            }
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        font-size: em(20);
+
+        li {
+            margin: 0 20px;
+            list-style: none;
+        }
+    }
+}

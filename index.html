@@ -1,108 +1,60 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Vladimir's Projects</title>
-	<style>
-		body {
-			padding: 0px;
-			margin: 0px;
-			font-family: century gothic, sans-serif;
-		}
-
-		h1,
-		h2 {
-			text-align: center;
-			font-size: 3em;
-		}
-
-		a:link,
-		a:visited,
-		a:hover,
-		a:active {
-			color: black;
-			text-decoration: none;
-		}
-
-		ul {
-			padding: 0px;
-			text-align: center;
-		}
-
-		li {
-			display: inline-block;
-			padding-bottom: 3px;
-			margin-right: 10px;
-			margin-left: 10px;
-			font-size: 2em;
-		}
-
-		li:after {
-			content: '';
-			display: block;
-			border-bottom: solid 2px orange;
-			transform: scaleX(0);
-			transition: transform 500ms ease;
-			transform-origin: center;
-		}
-
-		li:hover:after {
-			transform: scaleX(1);
-			transform-origin: center;
-		}
-
-		.left:hover:after {
-			transform: scaleX(1);
-			transform-origin: left;
-		}
-
-		.left:after {
-			transform-origin: left;
-		}
-
-		.right:hover:after {
-			transform: scaleX(1);
-			transform-origin: right;
-		}
-
-		.right:after {
-			transform-origin: right;
-		}
-
-		@media screen and (max-width: 600px) {
-			li {
-				display: block;
-				margin-left: 25%;
-				margin-right: 25%;
-				font-size: 1.5em;
-			}
-
-			li:hover:after,
-			.left:hover:after,
-			.right:hover:after {
-				transition-delay: 200ms;
-				transform-origin: center;
-			}
-
-			.left:after,
-			.right:after {
-				transform-origin: center;
-			}
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v3ceban portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/styles.min.css">
+    <script src="https://kit.fontawesome.com/ed9239fef9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-	<h1>The portfolio is in WIP state!</h1>
-	<h2>Links to my projects (in case you're interested):</h2>
-	<ul>
-		<li class="left"><a href="./Midterm/index.html">Health Finder</a></li>
-		<li><a href="./ITSIT/EN/index.html">ITSIT Web Site</a></li>
-		<li><a href="./3.3.5aRogueGuide/index.html">Rogue Guide</a></li>
-		<li class="right"><a href="./Meow/index.html">Testing Page</a></li>
-	</ul>
+    <header>
+        <a class="logoLink" href="#">
+            <div class="logo">
+                <picture>
+                    <source srcset="./assets/graphics/mainLogo.svg">
+                    <img src="./assets/graphics/mainLogo.png" alt="v3ceban logo" width="46" height="40">
+                </picture>
+                <h1>Vladimir Ceban<span>Web Design&Development</span></h1>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </nav>
+        <ul>
+            <li><a href="https://github.com/v3ceban" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/v3ceban/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.instagram.com/v3ceban/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/v3ceban" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <p class="alert">the website is currently in wip state</p>
+            <h2>Major Projects</h2>
+            <ul>
+                <li><a href="./majorProjects/HealthFinder/index.html" target="_blank" rel="noopener noreferrer">Health Finder</a></li>
+                <li><a href="./majorProjects/ITSIT/EN/index.html" target="_blank" rel="noopener noreferrer">ITSIT Website</a></li>
+                <li><a href="./majorProjects/3.3.5aRogueGuide/index.html" target="_blank" rel="noopener noreferrer">Rogue Guide</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="./projects/Meow/index.html" target="_blank" rel="noopener noreferrer">Hugging and Testing</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <a href="http://validator.w3.org/check?uri=referer">Valid HTML5</a>
+    </footer>
 </body>
 
 </html>
