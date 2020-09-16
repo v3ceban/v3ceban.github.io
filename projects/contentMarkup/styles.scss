@@ -49,6 +49,11 @@ main figure {
     align-items: center;
 }
 
+main figure img {
+    max-width: 100%;
+    height: auto;
+}
+
 main figure figcaption {
     margin-top: 5px;
     font-style: italic;
