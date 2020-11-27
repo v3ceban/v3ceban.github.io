@@ -87,14 +87,22 @@
             height: 100vh;
             width: 100%;
             background: $primary-color;
+            font-size: em(36);
 
             li {
                 margin: 40px 0;
-                font-size: em(30);
 
                 ::after {
                     margin-top: 12px;
                 }
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: em(24);
+
+            li {
+                margin: 20px 0;
             }
         }
 
