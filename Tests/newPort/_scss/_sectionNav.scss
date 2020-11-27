@@ -1,0 +1,113 @@
+.sectionNav {
+    position: fixed;
+    z-index: 2;
+    bottom: 17.5vh;
+    right: 0;
+    font-weight: 500;
+    font-size: em(48);
+    line-height: normal;
+
+    @media screen and (max-width: 768px) {
+        bottom: 20vh;
+        font-size: em(36);
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: em(20);
+    }
+
+    li {
+        margin-top: 30px;
+        transition: transform 0.35s ease;
+
+        a {
+            padding-right: 80px;
+            border-bottom: 5px solid $primary-color;
+
+            @media screen and (max-width: 768px) {
+                border-bottom: 3.5px solid $primary-color;
+            }
+
+            @media screen and (max-width: 600px) {
+                border-bottom: 2px solid $primary-color;
+            }
+
+            &:hover,
+            &:focus {
+                color: white;
+                border-color: white;
+            }
+        }
+
+        &.active {
+            a {
+                color: white;
+                border-color: white;
+            }
+        }
+    }
+
+    li:nth-of-type(1) {
+        transform: translateX(0);
+
+        &.inactive {
+            transform: translateX(600px);
+        }
+
+        @media screen and (max-width: 768px) {
+            transform: translateX(50px);
+
+            &.active {
+                transform: translateX(50px) translateY(-50vh);
+            }
+
+            &.inactive {
+                transform: translateX(600px) translateY(-50vh);
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            transform: translateX(125px);
+            min-width: 405px;
+
+            &.active {
+                transform: translateX(125px) translateY(-50vh);
+            }
+
+            &.inactive {
+                transform: translateX(600px) translateY(-50vh);
+            }
+        }
+    }
+    li:nth-of-type(2) {
+        transform: translateX(275px);
+
+        &.inactive {
+            transform: translateX(600px);
+        }
+
+        @media screen and (max-width: 768px) {
+            transform: translateX(255px);
+
+            &.active {
+                transform: translateX(255px) translateY(-60vh);
+            }
+
+            &.inactive {
+                transform: translateX(600px) translateY(-60vh);
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            transform: translateX(238px);
+
+            &.active {
+                transform: translateX(238px) translateY(-60vh);
+            }
+
+            &.inactive {
+                transform: translateX(600px) translateY(-60vh);
+            }
+        }
+    }
+}
