@@ -2,66 +2,116 @@
 <html lang="en">
 
 <head>
+    <!--Meta-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>v3ceban portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous">
+    <meta name="author" content="Vladimir Ceban">
+    <meta name="keywords" content="Vladimir Ceban, v3ceban, Web Design, Front-end Development, Graphic Design, UI/UX, Resume, Portfolio">
+    <meta name="description" content="Vladimir Ceban is a web designer and front-end engineer, who also does graphic and UI/UX design.">
+    <!--Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <!--Hamburgers-->
+    <link rel="stylesheet" href="./css/hamburgers.min.css">
+    <!--My styles-->
     <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./css/styles.min.css">
+    <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/ed9239fef9.js" crossorigin="anonymous"></script>
-    <script src="./js/mobMenu.js" defer></script>
-    <script src="./js/stupidFix.js" defer></script>
+    <!--My scripts-->
+    <script src="./js/background.js" defer></script>
+    <script src="./js/sectionNav.js" defer></script>
+    <script src="./js/hamburger.js" defer></script>
+    <!--Title-->
+    <title>Vladimir Ceban: Web Design and Development</title>
 </head>
 
 <body>
-    <header>
-        <a class="logoLink" href="./index.html">
-            <div class="logo">
-                <picture>
-                    <source srcset="./assets/graphics/mainLogo.svg">
-                    <img src="./assets/graphics/mainLogo.png" alt="v3ceban logo" width="46" height="40">
-                </picture>
-                <h1>Vladimir Ceban<span>Web Design&Development</span></h1>
-            </div>
+    <nav class="mainNav">
+        <a href="./index.html" class="logo">
+            <picture>
+                <source srcset="./assets/graphics/mainLogo.svg">
+                <img src="./assets/graphics/mainLogo.png" alt="v3ceban logo" width="46" height="40">
+            </picture>
+            <h1>Vladimir Ceban<span>Web Design&Development</span></h1>
         </a>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="./assets/files/Resume.pdf" target="_blank">Resume</a></li>
-                </ul>
-            </nav>
-            <ul>
-                <li><a href="https://github.com/v3ceban" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/v3ceban/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="https://www.instagram.com/v3ceban/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://twitter.com/v3ceban" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            </ul>
-        </div>
-        <i class="fas fa-bars"></i>
-        <i class="fas fa-times"></i>
+
+        <ul class="otherPages">
+            <li><a href="./about">About me</a></li>
+            <li><a href="./contact">Contact</a></li>
+            <li><a href="./resume">My resume</a></li>
+        </ul>
+
+        <ul class="social">
+            <li><a href="https://github.com/v3ceban" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/v3ceban/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.instagram.com/v3ceban/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/v3ceban" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+
+        <!--Hamburger button-->
+        <button class="hamburger hamburger--slider-r" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </nav>
+    <header>
+        <p>Hey there! <br> My name is Vladimir. <br> Here are some things I can do:</p>
     </header>
+    <nav class="sectionNav">
+        <ul>
+            <li class="">
+                <h2><a href="#WebDesign">Web Design/Development</a></h2>
+            </li>
+            <li class="">
+                <h2><a href="#GraphicDesign">Graphic Design</a></h2>
+            </li>
+        </ul>
+    </nav>
     <main>
-        <section>
-            <p class="alert">the website is currently in wip state</p>
-            <h2>Major Projects</h2>
-            <ul>
-                <li><a href="./majorProjects/HealthFinder/index.html" target="_blank">Health Finder</a></li>
-                <li><a href="./majorProjects/ITSIT/EN/index.html" target="_blank">ITSIT Website</a></li>
-                <li><a href="./majorProjects/3.3.5aRogueGuide/index.html" target="_blank">Rogue Guide</a></li>
-            </ul>
+        <section id="WebDesign">
+            <div class="right">
+                <div class="healthFinder">
+                    <h3>HealthFinder</h3>
+                    <p>This project’s main idea was to create a responsive advertising and descriptive web page for the Health Finder app.</p>
+                    <a href="#">Read more...</a>
+                </div>
+                <div class="ITSIT inactive">
+                    <h3>ITSIT</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis quibusdam ab impedit cumque alias a ea eius neque commodi magni!</p>
+                    <a href="#">Read more...</a>
+                </div>
+            </div>
+            <div class="left">
+                <div class="healthFinder">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="./assets/webProjects/healthFinder/mainAvif.avif" type="image">
+                        <source media="(min-width: 768px)" srcset="./assets/webProjects/healthFinder/mainMoz.jpg" type="image/jpeg">
+                        <source media="(min-width: 768px)" srcset="./assets/webProjects/healthFinder/mainJpg.jpg" type="image/jpeg">
+                        <source media="(min-width: 1px)" srcset="./assets/webProjects/healthFinder/mainPhoneAvif.afiv" type="image">
+                        <source media="(min-width: 1px)" srcset="./assets/webProjects/healthFinder/mainPhoneMoz.jpg" type="image/jpeg">
+                        <source media="(min-width: 1px)" srcset="./assets/webProjects/healthFinder/mainPhoneJpg.jpg" type="image/jpeg">
+                        <img src="" alt="HealthFinder website prototype/wireframe">
+                    </picture>
+                </div>
+                <div class="ITSIT inactive">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="./assets/webProjects/ITSIT/mainAvif.avif" type="image">
+                        <source media="(min-width: 768px)" srcset="./assets/webProjects/ITSIT/mainMoz.jpg" type="image/jpeg">
+                        <source media="(min-width: 768px)" srcset="./assets/webProjects/ITSIT/mainJpg.jpg" type="image/jpeg">
+                        <source media="(min-width: 1px)" srcset="./assets/webProjects/ITSIT/mainPhoneAvif.afiv" type="image">
+                        <source media="(min-width: 1px)" srcset="./assets/webProjects/ITSIT/mainPhoneMoz.jpg" type="image/jpeg">
+                        <source media="(min-width: 1px)" srcset="./assets/webProjects/ITSIT/mainPhoneJpg.jpg" type="image/jpeg">
+                        <img src="" alt="ITSIT website prototype/wireframe">
+                    </picture>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Lesser Projects (not mobile friendly)</h2>
-            <ul>
-                <li><a href="./projects/contentMarkup/index.html">Content Markup</a></li>
-                <li><a href="./projects/Meow/index.html">Hugging and Testing</a></li>
-            </ul>
-        </section>
+        <section id="GraphicDesign"></section>
     </main>
-    <footer>
-        <a href="http://validator.w3.org/check?uri=referer" target="_blank">Valid HTML5</a>
-    </footer>
+    <div id="bg"></div>
 </body>
 
 </html>
