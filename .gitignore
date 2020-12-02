@@ -28,6 +28,7 @@
 # use `git rm --cached`
 #
 # Change Log:
+# 20201201 ignore _scss
 # 20190705 ignore private/secret files
 # 20181206 remove trailing whitespaces
 # 20180714 unignore .phpcs.xml.dist

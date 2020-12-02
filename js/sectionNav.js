@@ -19,7 +19,7 @@ function sectionNav() {
     window.addEventListener('scroll', function myScroll() {
 
         //get the point when the section is scrolled half the way to the screen
-        x = document.documentElement.scrollTop + screen.height / 1.5;
+        x = document.documentElement.scrollTop + screen.height / 2;
 
         //make all inactive, remove active class
         for (let i = 0; i < elements.length; i++) {
