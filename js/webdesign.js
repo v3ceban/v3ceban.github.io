@@ -8,7 +8,7 @@ function webDesign() {
 
     var counter = 0;
 
-    parentElement.addEventListener('mouseover', () => {
+    parentElement.addEventListener('click', () => {
         span.classList.add('fade-out');
     });
 
