@@ -3,8 +3,8 @@ function webDesign() {
         span = document.querySelectorAll(`.left span`)[0],
         prev = document.querySelectorAll(`.fa-caret-left`)[0],
         next = document.querySelectorAll(`.fa-caret-right`)[0],
-        elements = document.querySelectorAll(`.left div`),
-        textelements = document.querySelectorAll(`.right div`);
+        elements = document.querySelectorAll(`#WebDesign .left div`),
+        textelements = document.querySelectorAll(`#WebDesign .right div`);
 
     var counter = 0;
 
