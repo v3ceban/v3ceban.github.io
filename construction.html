@@ -17,12 +17,42 @@
     <link rel="stylesheet" href="./css/hamburgers.min.css">
     <!--My styles-->
     <link rel="stylesheet" href="./css/main.min.css">
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            align-items: center;
+            margin: 100px auto;
+            min-height: calc(100vh - 200px);
+        }
+
+        main h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 400px) {
+            main h2 {
+                font-size: 2em;
+            }
+        }
+
+        main p {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+
+        main img {
+            max-width: 80vw;
+        }
+    </style>
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/ed9239fef9.js" crossorigin="anonymous"></script>
     <!--My scripts-->
     <script src="./js/hamburger.js" defer></script>
     <!--Title-->
-    <title>Vladimir Ceban: About</title>
+    <title>Vladimir Ceban: Contact</title>
 </head>
 
 <body>
@@ -36,7 +66,7 @@
         </a>
 
         <ul class="otherPages">
-            <li class="active"><a href="./about.html">About me</a></li>
+            <li><a href="./about.html">About me</a></li>
             <li><a href="./contact.html">Contact</a></li>
             <li><a href="./assets/files/Resume.pdf" target="_blank">My resume</a></li>
         </ul>
@@ -54,57 +84,14 @@
             </span>
         </button>
     </nav>
-    <main class="aboutPage">
-        <section class="about">
-            <h2>ABOUT ME</h2>
-            <p>Vladimir has been doing web design and development since 2017. During this time, he managed to collect a solid amount of knowledge and techniques that are necessary for front-end web development.</p>
-            <p>Located in California, he was always interested in IT and Web technologies. Сlose location to the world capital of computer technologies makes him strive for knowledge and grow in his area of interest.</p>
-            <p>However, his technical part was always companied with a creative one. Besides front-end web development, he enjoys creating digital content in the forms of posters and social media posts.</p>
-        </section>
-        <section class="photo">
-            <picture>
-                <source srcset="./assets/graphics/v3cebanAvif.avif" type="image/avif">
-                <source srcset="./assets/graphics/v3cebanMoz.jpg" type="image/jpeg">
-                <img src="./assets/graphics/v3cebanJpg.jpg" alt='"Vladimir Ceban (v3ceban) photo'>
-            </picture>
-        </section>
-        <section class="skills">
-            <h2>My Skills</h2>
-            <h3>HTML5</h3>
-            <ul>
-                <li>DOM</li>
-                <li>Accessibility</li>
-                <li>SEO</li>
-            </ul>
-            <h3>CSS3</h3>
-            <ul>
-                <li>SASS</li>
-                <li>Animations</li>
-                <li>Grid</li>
-                <li>Responsive</li>
-            </ul>
-            <h3>JavaScript</h3>
-            <ul>
-                <li>ES-2020</li>
-                <li>Web APIs</li>
-                <li>JSON</li>
-                <li>React</li>
-                <li>jQuery</li>
-            </ul>
-            <h3>UI/UX Design</h3>
-            <ul>
-                <li>Figma</li>
-                <li>Prototyping</li>
-                <li>Wireframing</li>
-            </ul>
-            <h3>AdobeCC</h3>
-            <ul>
-                <li>Photoshop</li>
-                <li>Illustrator</li>
-                <li>Premiere</li>
-                <li>Adobe XD</li>
-            </ul>
-        </section>
+    <main>
+        <h2>Ooops, this page is under construction!</h2>
+        <picture>
+            <source srcset="./assets/graphics/construction.svg" type="image/svg+xml">
+            <source srcset="./assets/graphics/construction.avif" type="image/avif">
+            <img src="./assets/graphics/construction.png" alt='Construction'>
+        </picture>
+        <p>Check back soon!</p>
     </main>
 </body>
 
