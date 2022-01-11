@@ -1,10 +1,11 @@
 var emblaNode = document.getElementById("embla");
 var options = {
     startIndex: 1,
-    selectedClass: 'active'
+    selected: 'active',
 }
-var embla = EmblaCarousel(emblaNode, options);
+var plugins = [EmblaCarouselClassNames(options)];
 
+var embla = EmblaCarousel(emblaNode, options, plugins);
 
 embla.on('scroll', () => {
     const images = document.querySelectorAll('.embla__slide'),
@@ -14,6 +15,7 @@ embla.on('scroll', () => {
         texts[0].classList.remove('inactive');
         texts[1].classList.add('inactive');
         texts[2].classList.add('inactive');
+        console.log('123');
     } else if (images[1].classList.contains('active')) {
         texts[1].classList.remove('inactive');
         texts[0].classList.add('inactive');
