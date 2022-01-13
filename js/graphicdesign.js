@@ -8,14 +8,13 @@ var plugins = [EmblaCarouselClassNames(options)];
 var embla = EmblaCarousel(emblaNode, options, plugins);
 
 embla.on('scroll', () => {
-    const images = document.querySelectorAll('.embla__slide'),
+    var images = document.querySelectorAll('.embla__slide'),
         texts = document.querySelectorAll('#GraphicDesign .right div');
 
     if (images[0].classList.contains('active')) {
         texts[0].classList.remove('inactive');
         texts[1].classList.add('inactive');
         texts[2].classList.add('inactive');
-        console.log('123');
     } else if (images[1].classList.contains('active')) {
         texts[1].classList.remove('inactive');
         texts[0].classList.add('inactive');
