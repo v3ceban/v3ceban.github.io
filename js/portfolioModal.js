@@ -6,7 +6,7 @@ for (let i = 0; i < images.length; i++) {
     const element = images[i];
     element.onclick = function () {
         modal.style.display = "grid";
-        modalImage.src = element.src.replace('image', 'image_large');
+        modalImage.src = element.src.replace('_small', '_large');
     }
 }
 
