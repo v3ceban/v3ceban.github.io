@@ -15,3 +15,9 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+window.ontouchstart = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
