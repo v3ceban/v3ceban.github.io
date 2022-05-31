@@ -35,3 +35,11 @@ for (let i = 0; i < overlays.length; i++) {
         }
     });
 }
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    for (let n = 0; n < videos.length; n++) {
+        const element = videos[n];
+        element.controls = "true";
+        overlays[n].style.display = "none";
+    }
+}
