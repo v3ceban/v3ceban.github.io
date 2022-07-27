@@ -74,7 +74,8 @@ function memoryJS() {
     const gridDisplay = document.querySelector('#cardsGrid');
     var cardsChosen = [],
         cardsChosenIds = [],
-        score = 0;
+        score = 0,
+        moves = 1;
 
     //creates an image for each card in the array of cards
     function createBoard() {
@@ -132,6 +133,9 @@ function memoryJS() {
     function checkMatch() {
         //get all the cards
         let cards = document.querySelectorAll('#cardsGrid img');
+
+        //increase the move counter and display it on the page
+        document.getElementById('MemoryMoves').innerHTML = moves++;
 
         //if the two cards with the same name are clicked (win)
         if (cardsChosen[0] == cardsChosen[1]) {

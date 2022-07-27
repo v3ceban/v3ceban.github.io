@@ -29,6 +29,7 @@
     <script src="../js/hamburger.js" defer></script>
     <script src="./js/rockpaper.js" defer></script>
     <script src="./js/memory.js" defer></script>
+    <script src="./js/mole.js" defer></script>
     <!--Title-->
     <title>Vladimir Ceban: Vanilla JS Games</title>
 </head>
@@ -101,8 +102,25 @@
         </section>
         <section class="game Memory">
             <h2>Memory JS</h2>
-            <p>Score: <span id="MemoryScore">Not Started</span></p>
+            <p>Moves: <span id="MemoryMoves">0</span> | Score: <span id="MemoryScore">0</span></p>
             <div id="cardsGrid"></div>
+        </section>
+        <section class="game Whac-a-Mole">
+            <h2>Whac-a-Mole</h2>
+            <p>Score: <span id="MoleScore">0</span></p>
+            <p>Time Left: <span id="MoleTimer">60</span></p>
+            <div id="moleGrid">
+                <div class="moleSquare" id="mole1"></div>
+                <div class="moleSquare" id="mole2"></div>
+                <div class="moleSquare" id="mole3"></div>
+                <div class="moleSquare" id="mole4"></div>
+                <div class="moleSquare" id="mole5"></div>
+                <div class="moleSquare" id="mole6"></div>
+                <div class="moleSquare" id="mole7"></div>
+                <div class="moleSquare" id="mole8"></div>
+                <div class="moleSquare" id="mole9"></div>
+            </div>
+            <button id="MoleNewGame">Start</button>
         </section>
     </main>
 </body>
