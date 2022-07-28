@@ -6,30 +6,60 @@ function MoleJS() {
         startGame = document.querySelector('#MoleNewGame');
 
     let result = 0,
-        hit = null,
+        hitbox = null,
+        pseudoRandomNumber = null,
+        lastNumber = null,
         currentTime = 60,
         timerID = null;
 
+    //function sets the mole to a random square, but not twice to the same one
     function randomSquare() {
+        //removes any moles from the field
         squares.forEach(square => {
             square.classList.remove('mole');
         });
 
-        //Math.random to get a random value from 0 to 1. Multiply by 9 to get it bigger. Math.floor to round it down, so now it's a random number from 0 to 8.
-        //squares[random number from 0 to 8] returns a random square from the squares array.
-        let randomSquare = squares[Math.floor(Math.random() * 9)];
+        //sets pseudoRandomNumber to a random number withou repeating a number twice in a row
+        function getPseudoRandomNumber() {
+            //Math.random to get a random value from 0 to 1. Multiply by 9 to get it bigger. Math.floor to round it down, so now it's a random number from 0 to 8.
+            randomNumber = Math.floor(Math.random() * 9);
+            //if last number is different from the random generated number
+            if (lastNumber != randomNumber) {
+                //set last number to the generated number
+                lastNumber = randomNumber;
+                //set pseudoRandomNumber to the generated number
+                pseudoRandomNumber = randomNumber;
+            } else {
+                //if the last number is the same as generated number - do the function again
+                getPseudoRandomNumber();
+            }
+        }
+
+        //calling out the function every time the randomSquare function triggers
+        getPseudoRandomNumber();
+        //squares[pseudoRandomNumber] returns a random square from the squares array, but no the same square twice
+        let randomSquare = squares[pseudoRandomNumber];
         //add the mole to a random square
         randomSquare.classList.add('mole');
 
-        hit = randomSquare.id;
+        //sets the hitbox to the id of the random square with the mole
+        hitbox = randomSquare.id;
     }
 
+    //adds an event listener to each square
     squares.forEach(square => {
         square.addEventListener('click', () => {
-            if (square.id == hit) {
+            //if the id of the square is the same as the hitbox adds a point, updates it on the page, resets the hitbox
+            if (square.id == hitbox) {
                 result++;
                 score.innerHTML = result;
-                hit = null;
+                //add shake when clicked
+                square.classList.add('shake');
+                //remove shake when animation finishes to reset it
+                setTimeout(() => {
+                    square.classList.remove('shake');
+                }, 800);
+                hitbox = null;
             };
         })
     });
@@ -70,6 +100,8 @@ function MoleJS() {
 
     function gameInit() {
         moveMole();
+        result = 0;
+        score.innerHTML = result;
         document.querySelector('#moleGrid').style = "background-image: none";
     }
 

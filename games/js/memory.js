@@ -74,7 +74,7 @@ function memoryJS() {
     const gridDisplay = document.querySelector('#cardsGrid');
     var cardsChosen = [],
         cardsChosenIds = [],
-        score = 0,
+        cardsWon = [],
         moves = 1;
 
     //creates an image for each card in the array of cards
@@ -110,14 +110,14 @@ function memoryJS() {
             this.classList.add('animated');
             //prevent card from being clicked again
             this.removeEventListener('click', flipCard);
-            //get all the cards
-            let cards = document.querySelectorAll('#cardsGrid img');
-            //prevent the new cards to be clicked before the animation finishes
-            cards.forEach(card => card.removeEventListener('click', flipCard));
-            //allow the cards to be clicked after the animation finishes 
-            setTimeout(() => {
-                cards.forEach(card => card.addEventListener('click', flipCard));
-            }, 800);
+            //This was supposed to prevent any clicks during the animation, but I can't figure how to restore the event listeners after the animation ends only to the right (not yet open) items
+            // let cards = document.querySelectorAll('#cardsGrid img');
+            // //prevent the new cards to be clicked before the animation finishes
+            // cards.forEach(card => card.removeEventListener('click', flipCard));
+            // //allow the cards to be clicked after the animation finishes 
+            // setTimeout(() => {
+            //     cards.forEach(card => card.addEventListener('click', flipCard));
+            // }, 800);
             //remove the animation class after the animation finishes
             setTimeout(() => {
                 this.classList.remove('animated');
@@ -134,25 +134,34 @@ function memoryJS() {
         //get all the cards
         let cards = document.querySelectorAll('#cardsGrid img');
 
+        if (cardsChosenIds[1] == undefined) {
+            if (cardsChosenIds[0]) { cards[cardsChosenIds[0]].setAttribute('src', './assets/Memory/card.png'); }
+            if (cardsChosenIds[0]) { cards[cardsChosenIds[0]].addEventListener('click', flipCard); }
+        }
+
         //increase the move counter and display it on the page
         document.getElementById('MemoryMoves').innerHTML = moves++;
 
         //if the two cards with the same name are clicked (win)
-        if (cardsChosen[0] == cardsChosen[1]) {
+        if (cardsChosen[0] === cardsChosen[1]) {
             //check that the first card is actually clicked and then remove its event listener
             if (cardsChosenIds[0]) { cards[cardsChosenIds[0]].removeEventListener('click', flipCard); }
             //check that the second card is actually clicked and then remove its event listener
             if (cardsChosenIds[1]) { cards[cardsChosenIds[1]].removeEventListener('click', flipCard); }
-            //increase the score counter
-            score++;
+            //increase the score counter if the cardsChosen array didn't decide to submit itself while being empty
+            if (cardsChosen.length != 0) {
+                cardsWon.push(cardsChosen);
+            }
         } /*if the images are different, or something unexpected happened*/else {
             //check that the first card is clicked, then hide its image (set to the default image)
             if (cardsChosenIds[0]) {
                 cards[cardsChosenIds[0]].setAttribute('src', './assets/Memory/card.png');
+                cards[cardsChosenIds[0]].addEventListener('click', flipCard);
             }
             //check that the second card is clicked, then hide its image (set to the default image)
             if (cardsChosenIds[1]) {
                 cards[cardsChosenIds[1]].setAttribute('src', './assets/Memory/card.png');
+                cards[cardsChosenIds[1]].addEventListener('click', flipCard);
             }
         }
 
@@ -160,10 +169,10 @@ function memoryJS() {
         cardsChosen = [];
         cardsChosenIds = [];
         //update the score counter on the page
-        document.getElementById('MemoryScore').innerHTML = score;
+        document.getElementById('MemoryScore').innerHTML = cardsWon.length;
 
         //display a message if the game is over
-        if (score == cardArray.length / 2) {
+        if (cardsWon.length == cardArray.length / 2) {
             document.getElementById('MemoryScore').innerHTML = 'You won!';
         }
     }
